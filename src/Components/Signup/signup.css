@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Single+Day:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
 
 *{
     color: #fff;
@@ -34,7 +36,19 @@ letter-spacing: 0.36px;
 .form_body.left{
     width: 40%;
     align-items: flex-end;
-    margin-bottom: 100px;
+    
+}
+#quote{
+    text-align: start;
+width: 695px;
+height: 143px;
+color: #FFF;
+font-family: Roboto;
+font-size: 3em;
+font-style: normal;
+font-weight: 900;
+line-height: 141.688%; /* 77.928px */
+letter-spacing: 1.1px;
 }
 
 /*Right Body*/
@@ -71,19 +85,22 @@ margin: 0%;
     flex-direction: column;
     margin: 1em;
 }
-.input-control_check{
+.input-control.check{
     display: flex;
+    flex-direction: row;
     
 }
 
 .subform.two input[type="text"]{
     margin-bottom: 1%;
-    width: 100%;
+    width: inherit;
     height: 64.869px;
     flex-shrink: 0;
     border-radius: 3.816px;
     border: 1px solid #F00;
     background: #292929;
+    padding-left: 5% ;
+    font-family: DM Sans;
 
 }
 button{
@@ -92,4 +109,5 @@ button{
     width: inherit;
     height: 55px;
     flex-shrink: 0;
+    cursor: pointer;
 }

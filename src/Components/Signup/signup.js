@@ -16,23 +16,23 @@ const Signup = () => {
         <div className="subform two">
           <form>
             <div class="input-control">
-              <input type="text" placeholder="meow"></input>
+              <input type="text" placeholder="Name"></input>
               <div className="error"></div>
             </div>
             <div class="input-control">
-              <input type="text" placeholder="meow"></input>
+              <input type="text" placeholder="Username"></input>
               <div className="error"></div>
             </div>
             <div class="input-control">
-              <input type="text" placeholder="meow"></input>
+              <input type="text" placeholder="Email"></input>
               <div className="error"></div>
             </div>
             <div class="input-control">
-              <input type="text" placeholder="meow"></input>
+              <input type="text" placeholder="Mobile"></input>
               <div className="error"></div>
             </div>
-            <div class="input-control_check">
-              <input type="checkbox" />Share my registration data with Superapp
+            <div class="input-control check">
+              <input type="checkbox" />&emsp;Share my registration data with Superapp
               <div className="error"></div>
             </div>
             <div class="input-control">
