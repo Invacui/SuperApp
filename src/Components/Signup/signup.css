@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Single+Day:wght@400;500&display=swap");
+
+*{
+    color: #fff;
+}
+.highlight{
+font-family: Roboto;
+color:#72DB73;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 141.7%; /* 25.506px */
+letter-spacing: 0.36px;
+}
+.main_body{
+    height: 100vh;
+    background-color: black;
+    border: 2px solid white;
+    background-image: url(../../Drawables/bg.png);
+    background-repeat: no-repeat;
+    background-size: 40% 100vh; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.form_body{
+    display: flex;
+    justify-content: center;
+    border: 2px solid yellow;
+    height: inherit;
+}
+
+/*Left Body*/
+.form_body.left{
+    width: 40%;
+    align-items: flex-end;
+    margin-bottom: 100px;
+}
+
+/*Right Body*/
+.form_body.right{
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    width: 60%;
+}
+.subform{
+    border: 2px solid pink;
+    height: auto;
+    width: 518px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+#logo{
+color: #72DB73;
+font-family: Single Day;
+font-size: 67px;
+font-style: normal;
+font-weight: 400;
+margin: 0%;
+}
+.mmo{
+    border: 2px solid mediumorchid;
+}
+
+.input-control{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.input-control_check{
+    display: flex;
+    
+}
+
+.subform.two input[type="text"]{
+    margin-bottom: 1%;
+    width: 100%;
+    height: 64.869px;
+    flex-shrink: 0;
+    border-radius: 3.816px;
+    border: 1px solid #F00;
+    background: #292929;
+
+}
+button{
+    border-radius: 28px;
+    background: #72DB73;
+    width: inherit;
+    height: 55px;
+    flex-shrink: 0;
+}
