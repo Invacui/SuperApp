@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Single+Day:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
-
+:root{
+    --box_fname : blue;
+    --box_uname : blue;
+    --box_email : blue;
+    --box_phone : blue;
+}
 *{
     color: #fff;
 }
@@ -90,19 +95,41 @@ margin: 0%;
     flex-direction: row;
     
 }
-
+/*Input box======================>*/
 .subform.two input[type="text"]{
     margin-bottom: 1%;
     width: inherit;
     height: 64.869px;
     flex-shrink: 0;
+    
     border-radius: 3.816px;
-    border: 1px solid #F00;
     background: #292929;
     padding-left: 5% ;
     font-family: DM Sans;
 
 }
+/*Input box======================>*/
+#name:focus {
+    color: var(--box_fname);
+    border: 1px solid var(--box_fname);
+    outline: 1px;
+}
+#uname:focus {
+    color: var(--box_uname);
+    border: 1px solid var(--box_uname);
+    outline: 1px;
+  }
+#email:focus {
+    color: var(--box_email);
+    border: 1px solid var(--box_email);
+    outline: 1px;
+  }
+#mobile:focus {
+    color: var(--box_phone);
+    border: 1px solid var(--box_phone);
+    outline: 1px;
+  }
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 button{
     border-radius: 28px;
     background: #72DB73;
@@ -111,3 +138,29 @@ button{
     flex-shrink: 0;
     cursor: pointer;
 }
+/*color coding of the errors */
+.Errormsg {
+    display: block;
+    color: red;
+    width: inherit;
+    margin-top: 4px;
+  }
+  .Errormsg.hidden {
+    display: none;
+  }
+  
+  label {
+    padding-left: 5px;
+    text-align: start;
+    float: left;
+    width: 144px;
+    height: 9px;
+    color: #404040;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.86px;
+  }
