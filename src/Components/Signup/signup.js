@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./working.js";
 import "./signup.css";
+import { useNavigate } from "react-router-dom";
 const Signup = () => {
+  const navigate = useNavigate();
   const [fname, setFname] = useState(""); // Use useState with parentheses, not square brackets
   const [uname, setUname] = useState(""); // Corrected variable names
   const [email, setEmail] = useState(""); // Corrected variable names
@@ -31,7 +33,9 @@ const Signup = () => {
     //Set toast==>
     console.log(`IsAnyFieldEmpty==>${isAnyFieldEmpty} ,LableVisible=>${anyLabelVisible},SetCheckedState=>${!(isChecked)}`);
     // setErrorState((isAnyFieldEmpty || anyLabelVisible) ? showToast("⚠️ Check the form for Errors!", "toast-error") : showToast("✔️ Info collected thanks!", "toast-success"));
-    setFinal(isAnyFieldEmpty && anyLabelVisible && isChecked);
+    (isAnyFieldEmpty || anyLabelVisible)?console.log("Executing the navigate page ... "):navigate("/userinfo");
+    
+    
   };
  
 
@@ -121,7 +125,7 @@ const Signup = () => {
         </div>
 
         <div className="subform two">
-          <form id="form" action="">
+          <form id="form" action="/userinfo">
             <div class="input-control">
               <input
                 type="text"

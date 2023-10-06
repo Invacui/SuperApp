@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Single+Day:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
+@import url(../Misc/font.css);
 :root{
     --box_fname : blue;
     --box_uname : blue;
@@ -68,8 +66,9 @@ letter-spacing: 1.1px;
     border: 2px solid pink;
     height: auto;
     width: 518px;
-    padding: 2%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     overflow: hidden;
 }

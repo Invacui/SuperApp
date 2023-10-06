@@ -1,11 +1,14 @@
-import Signup from './Components/Signup/signup';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Signup from './Components/Signup/signup';
+import UserSel from './Components/UserSelections/index'
 
 function App() {
   return (
-    <div className="App">
-      <Signup />
-    </div>
+    <Routes>
+      <Route exac path="/" element={<Signup />} />
+      <Route path="/userinfo" element={<UserSel />} />
+    </Routes>
   );
 }
 
