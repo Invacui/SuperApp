@@ -1,0 +1,95 @@
+.card {
+    width: 15vw;
+    height: 13em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  .userbox{
+    display: flex;
+    border: 1px solid blue;
+    padding: 1%;
+    height: 100vh;
+    width: auto;
+    justify-content: space-between;
+  }
+  .leftbox{
+    border: 1px solid yellow;
+    margin: 5%;
+    width:30% ;
+    padding-left:5% ;
+  }
+  
+  .desc1{
+    border: 1px solid red;
+    width: min-content;
+  }
+    #Catdesc{
+      color: #FFF;
+      font-family: Roboto;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 139.688%; /* 94.988px */
+      word-spacing: 20px;
+    }
+
+    
+/* Cards Editor===================> */
+#selectedCards{
+  border: 1px solid magenta;
+  width: 70%;
+}
+.totalSCards{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid brown;
+  height: inherit;
+}
+.SCard{
+  border: 1px solid green;
+  background-color: green;
+  width: fit-content;
+  font-weight: 600;
+  padding: 1%;
+  padding-right: 3%;
+  border-radius: 12px;
+  margin: 0.5em ;
+}
+.SCard span{
+  background-color: transparent;
+}
+#SCardsp{
+  color: #ccc;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.03s;
+}
+#SCardsp:hover{
+  color: #FFF;
+}
+/*Warning Box==================>*/
+.warbox1 p{
+  color: transparent;  
+  text-shadow: 0 0 0 red;
+  
+}
+.warbox1 img{
+  margin-bottom: -0.5%;
+  width: 20px;
+  height: 20px;
+}
+/*Right Box======================>*/
+
+.rightbox{
+  border: 1px solid yellow;
+  margin: 4%;
+  width: 60%;
+}
