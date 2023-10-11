@@ -1,40 +1,34 @@
-.card {
-    width: 15vw;
-    height: 13em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    overflow: hidden;
-  }
-  .card img {
-    max-width: 100%;
-    height: auto;
-  }
+
   .userbox{
     display: flex;
     border: 1px solid blue;
-    padding: 1%;
-    height: 100vh;
+    height: 100%;
     width: auto;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: baseline;
   }
   .leftbox{
+    display: inline-block;
     border: 1px solid yellow;
     margin: 5%;
-    width:30% ;
+    width:fit-content ;
+    height: fit-content;
     padding-left:5% ;
   }
   
   .desc1{
     border: 1px solid red;
-    width: min-content;
+    display: flex;
+    flex-wrap: wrap; 
+    width: fit-content;
+    height: auto;
+    margin-right: 50%;
+    margin-top: 5%;
   }
     #Catdesc{
       color: #FFF;
       font-family: Roboto;
-      font-size: 3rem;
+      font-size: 2.5vw;
       font-style: normal;
       font-weight: 700;
       line-height: 139.688%; /* 94.988px */
@@ -76,10 +70,10 @@
   color: #FFF;
 }
 /*Warning Box==================>*/
+
 .warbox1 p{
   color: transparent;  
   text-shadow: 0 0 0 red;
-  
 }
 .warbox1 img{
   margin-bottom: -0.5%;
@@ -89,7 +83,80 @@
 /*Right Box======================>*/
 
 .rightbox{
+  display: flex;
+  flex-direction: column;
   border: 1px solid yellow;
-  margin: 4%;
-  width: 60%;
+  margin-right: 5%;
+  padding: 0% 5%;
+  width: 40%;
+  height: auto;
 }
+.card-list {    /*In CardsList.js*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 1px solid magenta;
+  height: auto;
+  width: auto;
+}
+.cardbody{ /*In Cards.js toggle*/ 
+  height: 25vh;
+  width: 10vw;
+  border: 4px solid green;
+  border-radius: 5px;
+  margin: 2% 0%;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+  height: 99%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#cd1{
+  background-color: transparent;
+  width: 80%;
+  height: min-content;
+  padding: 0%;
+  margin-bottom: 10%;
+}
+.cardbody h2{
+  background-color: transparent;
+  margin: 0%;
+  font-size: 2vw;
+  text-align: start;
+}
+#cd2{
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 90%;
+  height: 50%;
+  margin: 0%;
+ 
+}
+.cardbody img {
+    
+    border-radius: 10px;
+    width: 95%;
+    height: 95% ;
+    box-shadow : -1px 3px 2px 1px rgba(58, 58, 58, 0.709);
+  }
+  #page_3{
+    display: flex;
+    justify-content: end;
+    border: 1px solid peru;
+    width: 100%;
+  }
+  #page_3_nxt{
+    width: fit-content;
+    padding: 0% 5%;
+    font-size: 1vw;
+    font-weight: bolder;
+  }
