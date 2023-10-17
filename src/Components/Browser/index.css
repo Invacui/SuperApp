@@ -1,0 +1,51 @@
+.browserbody{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid yellow;
+    padding: 2% 5%;
+}
+.navb{
+    display: flex;
+    justify-content: space-between;
+}
+.dplogo{
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 1px #FFF;
+    overflow: hidden;
+}
+.dplogo img{
+    width: inherit;
+    transform: scale3d(1.5, 1.5, 1.5);
+    object-fit: cover;
+    cursor: pointer;
+}
+.MovieGenre{
+    display: flex;
+    width: auto;
+    height: fit-content;
+    border: 3px solid red;
+    flex-direction: column;
+}
+.movie-grid{
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    border: 3px solid yellow;
+    padding: 2%;
+}
+.movie-card{
+    
+    border: 3px solid red;
+    width: 20%; 
+    height: 200px;
+    overflow: hidden;
+}
+.movie-card img{
+    width: 100%;
+    height: inherit;
+    object-fit: ;
+    object-position: bottom;
+}

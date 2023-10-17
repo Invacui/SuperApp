@@ -9,4 +9,15 @@ const imagePath = [
     "../../Drawables/8.png",
     "../../Drawables/9.png",
 ];
-export default imagePath
+
+
+const wicnpack = [
+    require("../../Drawables/Weather.Icn/sun-512.png"),
+    require("../../Drawables/Weather.Icn/Heavy_rain.png"),
+    require("../../Drawables/Weather.Icn/cloudy.png"),
+    require("../../Drawables/Weather.Icn/mist.png"),
+    require("../../Drawables/Weather.Icn/storm.png"),
+    require("../../Drawables/Weather.Icn/snow.png"),
+    require("../../Drawables/Weather.Icn/mbar.svg"),
+];
+export {imagePath, wicnpack}

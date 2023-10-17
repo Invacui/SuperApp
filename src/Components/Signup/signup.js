@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./working.js";
 import "./signup.css";
 import { useNavigate } from "react-router-dom";
 const Signup = () => {
@@ -33,7 +32,16 @@ const Signup = () => {
     //Set toast==>
     console.log(`IsAnyFieldEmpty==>${isAnyFieldEmpty} ,LableVisible=>${anyLabelVisible},SetCheckedState=>${!(isChecked)}`);
     // setErrorState((isAnyFieldEmpty || anyLabelVisible) ? showToast("⚠️ Check the form for Errors!", "toast-error") : showToast("✔️ Info collected thanks!", "toast-success"));
-    (isAnyFieldEmpty || anyLabelVisible)?console.log("Executing the navigate page ... "):navigate("/userinfo");
+    if (!isAnyFieldEmpty && !anyLabelVisible) {
+      // Store data in localStorage
+      localStorage.setItem("fname", fname);
+      localStorage.setItem("uname", uname);
+      localStorage.setItem("email", email);
+      navigate("/userinfo");
+    } else {
+      console.log("Error: Form validation failed");
+    }
+  
     
     
   };
@@ -93,7 +101,7 @@ const Signup = () => {
     }
   };
   const handleMobileChange = (newValue) => {
-    setEmail(newValue); //Simply Changig the State
+    setMobile(newValue); //Simply Changig the State
     if (newValue.trim() === "") {
       default_Error_fn_en("hidden_mobile", "--box_phone");
       setErrormsg4("The field shouldn't be empty");

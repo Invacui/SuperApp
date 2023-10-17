@@ -7,6 +7,8 @@
 }
 *{
     color: #fff;
+}
+body{
     background-color: black;
 }
 .highlight{
@@ -133,7 +135,7 @@ margin: 0%;
 /*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 button{
     border-radius: 28px;
-    background: #72DB73;
+    background: #148A08;
     width: inherit;
     height: 55px;
     flex-shrink: 0;

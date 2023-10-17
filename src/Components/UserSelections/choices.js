@@ -1,4 +1,4 @@
-import imagePath from '../Misc/imagepath';
+
 export  const data = [
     {
       "id": 1,

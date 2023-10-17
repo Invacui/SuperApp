@@ -1,0 +1,281 @@
+
+.Time_main{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    border: 1px solid mediumorchid;
+    border-radius: 20px;
+    width: 40rem;
+    height: 12rem;
+
+}
+.tbox{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+border: 1px solid yellow;
+border-radius: inherit;
+border: radius top 0px; 
+padding: 1%;
+height: 50%;
+width: auto;
+}
+#tboxone{
+    justify-content: space-evenly;
+    flex: 1;
+    background-color: #FF4ADE;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+#tboxtwo{
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    background-color:#101744 ;
+    flex: 2.5;
+}
+
+.tsbox0{
+    font-size: xx-large;
+    background-color: transparent;
+    height: auto;
+}
+.tsline{
+    border: 1px solid white;
+    height: 50%;
+}
+.tsbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid yellow;
+    background-color: transparent;
+    height: 100%;
+    width: 20%;
+}
+.tssbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border:1px solid green;
+    background: transparent;
+    overflow: hidden;
+}
+.tssbox.tssone{
+    width: auto;
+    height: 8vh;
+    flex-grow: 1
+}
+.tssbox.tssone1{
+    width:auto;
+    height: auto;
+    font-weight: 600;
+}
+.tssbox.tssone img {
+    filter: brightness(0) saturate(100%) invert(100%) contrast(100%);
+    background-color: transparent;
+    width:100%;
+    height: 100%;
+    
+}
+#tss1{
+    padding: 2px;
+    text-align: justify;
+    width: auto;
+    font-size: 1em;
+    
+}
+#tss2{
+    position: relative;
+    font-size: xxx-large;
+
+}
+#tss22{
+    font-size: small;
+}
+#tss3{
+    width: 80%;
+    height: auto;
+}
+#tss33{
+    width: 80%;
+    height: auto;
+    font-size: small;
+
+}
+#tss3 img{
+    width: 40%;
+    height: 50%;
+}
+#tss33 img{
+    background-color: transparent;
+    width: auto;
+    height: 80%;
+    padding-right:12px ;
+}
+#svgf{
+    background-color: transparent;
+    width: auto;
+    height: 50%;
+    padding-right:12px ;
+}
+/*============================================================>*/
+.userinfoblock{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 2%;
+    background-color: #5746EA;
+    border-radius: 2em;
+    border: 1px solid blue;
+    FLEX-GROW: 1;
+    
+}
+.userinfosub{
+    margin: 5% 5%;
+    border: 5px solid yellow; 
+    background-color: transparent;
+}
+#dp{
+    background-image: url(../../../Drawables/user.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20%;
+    border: 5px solid #FFF;
+    border-radius: 100px;
+    box-shadow: 0px 6px 12px 2px #101744; /*shadow dir ,intensity , area spread ,overall sahdow */
+}
+#dp1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 0%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.userinfoss{
+    height: 100px;
+    width: 100%;
+    border:1px solid yellow;
+    margin: 10px auto;
+    background-color: transparent;
+}
+.userinfoss div{
+    background-color: transparent;
+}
+#uis1{
+    
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    height: fit-content;
+    font-size: medium;
+    font-weight: 600;
+    background-color: transparent;
+}
+#uiuname{
+    font-size: xx-large;
+    background-color: transparent;
+}
+#uis2{
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: fit-content;
+    overflow: scroll;
+}
+#uis2sel{
+    width: 100px;
+    height: fit-content;
+    padding: 1% ;
+    margin: 2%;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #9F94FF;
+}
+/*============================================================>*/
+.page3mainblock{
+    display: flex;
+    padding: 1%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: fit-content;
+    border: 1px solid yellow;
+    
+}
+/*============================================================>*/
+.box_body_page3{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid green; 
+}
+
+#notebox{
+    display: flex;
+    margin-left:5% ;
+    flex-grow: 1;
+    border: 2px solid blue;
+    height: auto;
+    width:40rem;
+    position: relative;
+}
+#notebox p{
+font-size: xxx-large;
+font-weight: 700;
+color: #000;
+
+margin: 10%;
+background-color: transparent;
+position: absolute;
+}
+#notes{
+    width: auto;
+    flex-grow: 1;
+    font-size: xx-large;
+    background-color: #F1C75B;
+    border-radius: 19px;
+    padding-top: 30%;
+    padding-left: 10%;
+    padding-right:10% ;
+    margin: 2% auto;
+    color: #000;
+}
+/*==================================>*/
+.box_bossbody3{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid red;  
+}
+.timerboxpage3{
+    display: flex;
+
+    border: 3px solid purple;
+    margin: 1%;
+    background-color: #1E2343;
+    border-radius: 19px;
+}
+.timerbox3page3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    height: 500px;
+    width: 500px;
+    border: 2px solid yellow;
+}
