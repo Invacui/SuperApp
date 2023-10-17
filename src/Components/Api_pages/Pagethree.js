@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Pagethree = () => {
   const navigate = useNavigate();
   function handleSubmit (){
-    navigate('/browser');
+    navigate('/browse');
   }
   return (
     
