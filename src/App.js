@@ -1,8 +1,8 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Signup from './Components/Signup/signup';
-import PageTwo from './Components/UserSelections/index'
-import Pagethree from './Components/Api_pages/Pagethree'
+import PageTwo from './Components/UserSelections/index';
+import Pagethree from './Components/Api_pages/Pagethree';
 import Browser from './Components/Browser/Browser';
 
 function App() {
